@@ -1,0 +1,60 @@
+Title: Issue 2: Digital Dilemmas
+Date: 2024-11-07 10:20
+Modified: 2010-12-05 19:30
+Category: Python
+status: hidden
+Tags: pelican, publishing
+Authors: Alexis Metaireau, Conan Doyle
+Summary: Issue 02 Index
+
+## Dec. 2025
+
+<div class="article">
+<h3><a href="{filename}/posts/issue2-1.md">Editorial</a></h3>
+<p>Grace Nelson, Amelia Flynn, and Joe Sutherland</p>
+</div>
+
+<div class="article">
+<h3><a href="{filename}/posts/issue2-2.md">Resist: A Short Story</a></h3>
+<p>Amir Mokrane Benkelai</p>
+</div>
+
+<div class="article">
+<h3>Writing Against Erasure: Feminist Strategies for Navigating Bias and Exclusion on Wikipedia  </h3>
+<p>Wolfgang Edwards Van Muijen</p>
+</div>
+
+<div class="article">
+<h3>Accessible Mapping Tools for All </h3>
+<p>Emily Aimola</p>
+</div>
+
+<div class="article">
+<h3>Nothing in Life is Free: Uncovering the Hidden Costs of Technology</h3>
+<p>Amelia Flynn</p>
+</div>
+
+<div class="article">
+<h3>To VC or Not to VC</h3>
+<p>Samantha Winnick</p>
+</div>
+
+<div class="article">
+<h3>“Hey, it's been a while.” : The Spectacle of Wrongdoing and Recovery on YouTube</h3>
+<p>Neluka Ameresekere, Susane Dang, and Jingyi Long</p>
+</div>
+
+<div class="article">
+<h3>A Million Tomorrows: Playful Imaginings and Beautiful Futures</h3>
+<p>Kurhula Mbetse</p>
+</div>
+
+<div class="article">
+<h3>The Social Media Effect: A Reflection on the Additional Part of our Daily Lives</h3>
+<p>Jack Hunter-Buffington</p>
+</div>
+
+<div class="article">
+<h3>Alive in Their Garden: A Virtual Exploration of Art, Identity, and Technology</h3>
+<p>Sabine El-Dajani</p>
+</div>
