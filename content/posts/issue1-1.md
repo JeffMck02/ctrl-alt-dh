@@ -1,6 +1,5 @@
 Title: Issue 1 Editorial
 Date: 2023-02-04 10:20
-Modified: 2023-02-04 10:20
 Issue: Issue 1
 Citation: Afonso, Olivia, Jackson Grant, Jacquelyn Passarelli, Jessie Pajak. "Editorial." CTRL+ALT+DH, no. 2 (2023).
 Tags: open access, publishing, digital culture, technology, editorial

@@ -29,7 +29,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ("Instagram", "@CtrlAltDH"),
-    ("GitHub", "https://github.com/"),
+    ("GitHub", "https://cmiya.github.io/ctrl-alt-dh/"),
 )
 
 DEFAULT_PAGINATION = 10
@@ -46,18 +46,21 @@ TAG_URL = 'tag/{slug}.html'
 # Generate a tags index page listing all tags (optional)
 TAGS_SAVE_AS = 'tags.html'          # The tags index page URL
 
+# Save pages at the top level instead of /pages/
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+
 # Menu
 
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
-
 MENUITEMS = [
-    ('About', '/pages/about.html'),
-    ('Team', '/pages/team.html'),
-    ('Submissions', '/pages/submissions.html'),
+    ('About', '/about.html'),
+    ('Team', '/team.html'),
+    ('Submissions', '/submissions.html'),
     ('Browse', '/tags.html'),
-    ('News', '/news.html'),
+    ('News', '/category/news.html'),
 ]
 
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'tags', 'news']

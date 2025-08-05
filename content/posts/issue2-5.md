@@ -1,6 +1,5 @@
 Title: Nothing in Life is Free: Uncovering the Hidden Costs of Technology
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Flynn, Amelia. "Nothing in Life is Free: Uncovering the Hidden Costs of Technology." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: surveillance, data, essay

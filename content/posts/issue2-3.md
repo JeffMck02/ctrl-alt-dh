@@ -1,6 +1,5 @@
 Title: Writing Against Erasure: Feminist Strategies for Navigating Bias and Exclusion on Wikipedia
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Van Muijen, Wolfgang Edwards. "Writing Against Erasure: Feminist Strategies for Navigating Bias and Exclusion on Wikipedia." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: feminism, community, publishing, wikipedia, essay

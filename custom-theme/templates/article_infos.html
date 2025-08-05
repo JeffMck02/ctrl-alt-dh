@@ -21,7 +21,7 @@
         {% if article.metadata.issue %}
         {% set issue_number = article.metadata.issue | lower | replace(' ', '-') %}
         <h3>Issue</h3>
-        <a href="{{ SITEURL }}/pages/{{ issue_number }}.html">{{ article.metadata.issue }}</a>
+        <a href="{{ SITEURL }}/{{ issue_number }}.html">{{ article.metadata.issue }}</a>
         {% endif %}
 
         {% if article.tags %}

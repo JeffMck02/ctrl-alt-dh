@@ -1,6 +1,5 @@
 Title: An Essay about the Unexpected Obstacles of Creating a Journal
 Date: 2023-12-04 10:20
-Modified: 2023-12-04 10:20
 Issue: Issue 1
 Citation: Grant, Jackson. “An Essay about the Unexpected Obstacles of Creating a Journal.” CTRL+ALT+DH, no. 2 (2023).
 Tags: reflection, publishing, essay

@@ -1,6 +1,5 @@
 Title: To VC or Not to VC
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Winnick, Samantha. "To VC or Not to VC." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: collage, zine, research-creation

@@ -1,13 +1,12 @@
 Title: Team
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
-Category: Python
-Tags: pelican, publishing
+Slug: team
 Authors: Alexis Metaireau, Conan Doyle
-Summary: Short version for index and feeds
+Summary: Credit list for current and past issues of CTRL-ALT-DH.
 
 # Current Team
-
+---
 ## Issue 02 (Fall 2024)
 
 ### Admin/Communications
@@ -34,6 +33,7 @@ Summary: Short version for index and feeds
 - Lala Rukh Lodhi
 
 # Past Teams
+---
 Issue 01 (Fall 2023) - Arya Soni, Jacquelyn Passarelli, Jackson Grant, Jared Edwards, Jessica Cela, Jessie Pajak, Kevin Wang, Leah LaHaie, Olivia Afonso
 
 Issue 00 (Winter 2023) - Neluka Ameresekere, Susane Dang, Kelly Hughes, Jingyi Long. *(founding team)*

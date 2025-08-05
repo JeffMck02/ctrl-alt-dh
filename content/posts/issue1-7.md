@@ -1,6 +1,5 @@
 Title: CTRL+ALT+DH 2023: The Process and the Future A Video
 Date: 2023-12-04 10:20
-Modified: 2023-12-04 10:20
 Issue: Issue 1
 Citation: Afonso, Olivia, and Kevin Wang. “CTRL+ALT+DH 2023: The Process and the Future A Video.” CTRL+ALT+DH, no. 2 (2023).
 Tags: interview, video, publishing, student

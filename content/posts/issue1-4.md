@@ -1,6 +1,5 @@
 Title: From Wires to Wireless: An Art Piece
 Date: 2023-12-04 10:20
-Modified: 2023-12-04 10:20
 Category: Issue 1
 Citation: Cela, Jessica. "From Wires to Wireless: An Art Piece." CTRL+ALT+DH, no. 2 (2023).
 Tags: research-creation, phyiscal media, music

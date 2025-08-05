@@ -1,6 +1,5 @@
 Title: Culture Chronicles: A Podcast about Crafting a Student Journal on Modern Pop Culture
 Date: 2023-12-04 10:20
-Modified: 2023-12-04 10:20
 Issue: Issue 1
 Citation: Cela, Jessica, Jared Edwards, Leah LaHaie, and Arya Soni. “Culture Chronicles: A Podcast about Crafting a Student Journal on Modern Pop Culture.” CTRL+ALT+DH, no. 2 (2023).
 Tags: podcast, audio, research-creation

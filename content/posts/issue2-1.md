@@ -1,6 +1,5 @@
 Title: Introduction: Digital Dilemmas
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Nelson, Grade, Amelia Flynn, and Joe Sutherland. "Editorial." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: ethics, technology, digital culture, editorial

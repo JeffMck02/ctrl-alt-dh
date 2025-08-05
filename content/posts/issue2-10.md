@@ -1,6 +1,5 @@
 Title: Alive in Their Garden: A Virtual Exploration of Art, Identity, and Technology
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: El-Dajani, Sabine. "Alive in Their Garden: A Virtual Exploration of Art, Identity, and Technology." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: identity, blog

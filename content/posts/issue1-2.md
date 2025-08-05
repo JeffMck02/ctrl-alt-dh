@@ -1,6 +1,5 @@
 Title: The Creation of CTRL+ALT+DH
 Date: 2023-12-04 10:20
-Modified: 2023-12-04 10:20
 Issue: Issue 1
 status: hidden
 Citation: LaHaie, Leah. "The Creation of CTRL+ALT+DH." CTRL+ALT+DH, no. 2 (2023).

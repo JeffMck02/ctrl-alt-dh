@@ -1,6 +1,5 @@
 Title: The Social Media Effect: A Reflection on the Additional Part of our Daily Lives
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Hunter-Buffington, Jack. "The Social Media Effect: A Reflection on the Additional Part of our Daily Lives." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: game, social media, research-creation

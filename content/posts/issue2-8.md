@@ -1,6 +1,5 @@
 Title: A Million Tomorrows: Playful Imaginings and Beautiful Futures
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
+Date: 2025-12-03 10:20
 Issue: Issue 2
 Citation: Mbetse, Kurhula. "A Million Tomorrows: Playful Imaginings and Beautiful Futures." Digital Dilemmas, special issue of Ctrl-Alt-DH, no. 2 (2025).
 Tags: poetry, research-creation

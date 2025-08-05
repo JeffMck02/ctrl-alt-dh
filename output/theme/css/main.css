@@ -15,14 +15,17 @@
 @import url("fonts.css");
 */
 
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /***** Global *****/
 /* Body */
 body {
     background: #F5F4EF;
     color: black;
-    font-size: 100%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 125%; /* base font is 16px */
+    font-family: "Libertinus Serif", Georgia, Cambria, "Times New Roman", Times, serif;
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -34,21 +37,18 @@ body {
 }
 
 /* Headings */
-h1 {font-size: 2em }
-h2 {font-size: 1.571em}	/* 22px */
-h3 {font-size: 1.429em}	/* 20px */
-h4 {font-size: 1.286em}	/* 18px */
-h5 {font-size: 1.143em}	/* 16px */
+h1 {font-size: 1.5em }
+h2 {font-size: 1.3em}	/* 22px */
+h3 {font-size: 1.1em}	/* 20px */
+h4 {font-size: 1.1em}	/* 18px */
+h5 {font-size: 1.1em}	/* 16px */
 h6 {font-size: 1em}		/* 14px */
 
-h1, h2 {
-    letter-spacing: 0.5rem;
-}
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.1;
     margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: 'Roboto', arial, serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -215,7 +215,8 @@ img.left, figure.left, div.figure.align-left {
 	/* Main Nav */
 #banner nav {
     background: #29423A;
-    font-size: 1.143em;
+    font-family: 'Roboto', arial, serif;
+    font-size: 1em;
     overflow: auto;
     line-height: 30px;
     margin-top: auto;
@@ -461,6 +462,9 @@ img.left, figure.left, div.figure.align-left {
 .site-info {
     flex: 1;
     margin: 2em;
+    font-family: 'Roboto', arial, serif;
+    letter-spacing: 0.2em;
+    font-size: 75%;
 }
 
 .site-info:first-child {
@@ -479,7 +483,7 @@ img.left, figure.left, div.figure.align-left {
 li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title {font-size: 2em; margin-bottom: 10px; margin-top: 0; font-weight: bold; text-align:center;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
 
@@ -496,7 +500,6 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #posts-list h1 {
     font-size: 1.5em;
     font-weight: 400;
-    letter-spacing: 2px;
 }
 
 #posts-list .post-info {
