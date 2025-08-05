@@ -56,11 +56,11 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
 MENUITEMS = [
-    ('About', '/about.html'),
-    ('Team', '/team.html'),
-    ('Submissions', '/submissions.html'),
-    ('Browse', '/tags.html'),
-    ('News', '/category/news.html'),
+    ('About', 'about.html'),
+    ('Team', 'team.html'),
+    ('Submissions', 'submissions.html'),
+    ('Browse', 'tags.html'),
+    ('News', 'category/news.html'),
 ]
 
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'tags', 'news']
