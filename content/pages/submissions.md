@@ -150,7 +150,7 @@ This is a checklist to help you with your submission and does not replace the fu
 
 ## 6. On Acceptance And Publication
 
-## 6.1 Acceptable Works
+### 6.1 Acceptable Works
 
 Submissions may be accepted for certain reasons, which may include but are not limited to:
 
@@ -163,11 +163,11 @@ Submissions may be accepted for certain reasons, which may include but are not l
 - Demonstration of ability to make complex ideas interesting and accessible 
 - Ability to engage users
 
-## 6.2 Production
+### 6.2 Production
 
 A member of the CTRL+ALT+DH editing collective will keep you informed as to your article’s progress throughout the production process. Feedback will be made available to the corresponding author through OJS, and corrections by the author should be notified to us promptly. Authors are reminded to check their proofs carefully to confirm that all author information, including names, affiliations, and contact details are correct, and that Funding and Conflict of Interest statements, if any, are accurate. 
 
-## 6.3 Promoting Your Article
+### 6.3 Promoting Your Article
 
 Promoting  your paper or project will ensure it is as widely read and cited as possible. We encourage you to promote your article via social media channels. You maintain full ownership of your work, and may republish it on a personal website or blog. However, we recommend linking to the journal. You may also want to consider a statement that the article has been previously published in CTRL+ALT+DH. 
 

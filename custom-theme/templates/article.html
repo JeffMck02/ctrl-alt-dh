@@ -28,12 +28,18 @@
 
       <div class="entry-content">
         {% include 'article_infos.html' %}
+        {% include 'article_citation.html' %}
         {{ article.content }}
       </div><!-- /.entry-content -->
+
+      {% if article.metadata.acknowledgements %}
+      <div class="acknowledgements"><h3>Acknowledgements:</h3> <p>{{ article.metadata.acknowledgements }}</p></div>
+      {% endif %}
 
       {% if article.metadata.bio %}
       <div class="bio"><h3>Author Biography:</h3> <p>{{ article.metadata.bio }}</p></div>
       {% endif %}
+
 
       {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
         <div class="comments">

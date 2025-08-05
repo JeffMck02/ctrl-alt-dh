@@ -8,18 +8,20 @@
 	Original author: Enrique Ramírez <http://enrique-ramirez.com/>
 */
 
-/* Imports */
+/* Imports 
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
 @import url("fonts.css");
+*/
+
 
 /***** Global *****/
 /* Body */
 body {
     background: #F5F4EF;
     color: black;
-    font-size: 87.5%; /* Base font size: 14px */
+    font-size: 100%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.429;
     margin: 0;
@@ -92,13 +94,13 @@ ol {
 li { margin-top: 0.5em;
     margin-bottom: 1em; }
 
-.post-info, .bio {
+.post-info, .bio, .citation {
 max-width: 75%;
 margin: 1em;
 margin-bottom: 2em;
 }
 
-.post-info p{
+.post-info p {
     margin: 1px auto;
 }
 
@@ -131,15 +133,23 @@ div.note {
 }
 
 /* Tables */
-table {margin: .5em auto 1.5em auto; width: 98%;}
+table {
+    margin: .5em auto 1.5em auto;
+    max-width: 600px;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+    padding: 1em;
+}
+
+th {
+    padding: 1em;
+}
 
 	/* Thead */
-thead th {padding: .5em .4em; text-align: left;}
+thead th {padding: 1em; text-align: left;}
 thead td {}
-
-	/* Tbody */
-tbody td {padding: .5em .4em;}
-tbody th {}
 
 tbody .alt td {}
 tbody .alt th {}
@@ -164,15 +174,6 @@ img.right, figure.right, div.figure.align-right {
 img.left, figure.left, div.figure.align-left {
     float: left;
     margin: 0 2em 2em 0;
-}
-
-/* .rst support */
-div.figure img, figure img {  /* to fill figure exactly */
-    max-width: 100%;
-}
-div.figure p.caption, figure p.caption { /* margin provided by figure */
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 /*
@@ -291,6 +292,27 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     font-style: italic;
 }
 
+.index-cover figure img {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}
+
+/*
+	Article Images and Figures
+*****************/
+
+.art-image img, #featured .news-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.art-image figcaption {
+    color: grey;
+    font-style: italic;
+}
+
 
 /*
 	Featured
@@ -307,14 +329,17 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
-
+/* 
 #featured figure {
     border: 2px solid #eee;
     float: right;
     margin: 0.786em 2em 0 5em;
     max-width: 248px;
 }
+
 #featured figure img {display: block; float: right;}
+
+*/
 
 #featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
 #featured h3 {font-size: 1.429em; margin-bottom: .5em;}
@@ -330,7 +355,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     margin-bottom: 2em;
     margin-top: 2em;
     overflow: hidden;
-    padding: 20px 20px;
+    padding: 50px 50px;
     max-width: 75%;
     min-width: 75%;
     border-radius: 10px;
@@ -468,6 +493,16 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	/* Blog Index */
 #posts-list {list-style: none; margin: 0;}
 #posts-list .hentry {padding-left: 10px; position: relative;}
+#posts-list h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#posts-list .post-info {
+    max-width: 75%;
+    margin: 0em;
+}
 
 #posts-list footer {
     left: 10px;

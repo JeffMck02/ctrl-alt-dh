@@ -3,14 +3,40 @@
 {% block title %}{{ SITENAME|striptags }} - Tags{% endblock %}
 
 {% block content %}
+<section id="content" class="body">
 
-    <section id="content" class="body">
-        <h1>Tags for {{ SITENAME }}</h1>
-        <ul>
-            {% for tag, articles in tags|sort %}
-                <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
-            {% endfor %}
-        </ul>
-    </section>
+<h1>Browse By Issue</h1>
 
+<div class="issue-covers">
+
+<figure>
+<a href="{{ SITEURL }}/pages/issue-2.html">
+<img src="{{ SITEURL }}/images/cover-issue2.png">
+</a>
+<figcaption>December 2025, Issue 2</figcaption>
+</figure>
+
+<figure>
+<a href="{{ SITEURL }}/pages/issue-1.html">
+<img src="{{ SITEURL }}/images/cover-issue1.png">
+</a>
+<figcaption>December 2023, Issue 1</figcaption>
+</figure>
+
+<figure>
+<a href="{{ SITEURL }}/pages/issue-0.html">
+<img src="{{ SITEURL }}/images/cover-issue0.png">
+</a>
+<figcaption>April 2023, Issue 0</figcaption>
+</figure>
+
+</div>
+
+    <h1>Browse By Tag</h1>
+    <ul>
+        {% for tag, articles in tags|sort %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
+        {% endfor %}
+    </ul>
+</section>
 {% endblock %}
