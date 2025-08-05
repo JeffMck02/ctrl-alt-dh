@@ -1,6 +1,6 @@
 AUTHOR = 'cmiya'
 SITENAME = 'CTRL+ALT+DH'
-SITEURL = "https://cmiya.github.io/ctrl-alt-dh/"
+SITEURL = "https://cmiya.github.io/ctrl-alt-dh"
 
 PATH = "content"
 ARTICLE_PATHS = ['posts']
@@ -56,11 +56,11 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 
 MENUITEMS = [
-    ('About', 'about.html'),
-    ('Team', 'team.html'),
-    ('Submissions', 'submissions.html'),
-    ('Browse', 'tags.html'),
-    ('News', 'category/news.html'),
+    ('About', SITEURL + '/about.html'),
+    ('Team', SITEURL + '/team.html'),
+    ('Submissions', SITEURL + '/submissions.html'),
+    ('Browse', SITEURL + '/tags.html'),
+    ('News', SITEURL + '/category/news.html'),
 ]
 
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'tags', 'news']
