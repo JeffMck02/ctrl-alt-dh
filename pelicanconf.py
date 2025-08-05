@@ -1,6 +1,6 @@
 AUTHOR = 'cmiya'
 SITENAME = 'CTRL+ALT+DH'
-SITEURL = ""
+SITEURL = "https://cmiya.github.io"
 
 PATH = "content"
 ARTICLE_PATHS = ['posts']
