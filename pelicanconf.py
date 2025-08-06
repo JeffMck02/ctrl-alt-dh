@@ -57,21 +57,21 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 MENUITEMS = [
     ('About', [
-        ('Who We Are', SITEURL + '/who-we-are.html'),
-        ('Team', SITEURL + '/team.html'),
-        ('Contact', SITEURL + '/contact.html')
+        ('Who We Are', '/who-we-are.html'),
+        ('Team', '/team.html'),
+        ('Contact', '/contact.html')
     ]),
     ('Issues', [
-        ('Issue 0', SITEURL + '/issue-0.html'),
-        ('Issue 1: Creating CTRL-ALT-DH', SITEURL + '/issue-1.html'),
-        ('Issue 2: Digital Dilemmas', SITEURL + '/issue-2.html')
+        ('Issue 0', '/issue-0.html'),
+        ('Issue 1: Creating CTRL-ALT-DH', '/issue-1.html'),
+        ('Issue 2: Digital Dilemmas', '/issue-2.html')
     ]),
     ('Submissions', [
-        ('Guidelines', SITEURL + '/guidelines.html'),
-        ('CFP', SITEURL + '/cfp-2024.html')
+        ('Guidelines', '/guidelines.html'),
+        ('CFP', '/cfp-2024.html')
     ]),
-    ('Browse', SITEURL + '/tags.html'),
-    ('News', SITEURL + '/category/news.html'),
+    ('Browse', '/tags.html'),
+    ('News', '/category/news.html'),
 ]
 
 
