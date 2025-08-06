@@ -12,7 +12,6 @@
                         </h1>
                         {% include 'article_infos.html' %}
                         {{ article.content }}
-                        {% include 'comments.html' %}
                     </article>
                 </aside>
                 {% if loop.length > 1 %}
@@ -33,7 +32,6 @@
                         <div class="entry-content">
                             {% include 'article_infos.html' %}
                             <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a>
-                            {% include 'comments.html' %}
                         </div>
                     </article>
                 </li>
