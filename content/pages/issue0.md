@@ -2,6 +2,7 @@ Title: Issue 0
 Date: 2023-04-17 10:20
 Modified: 2023-04-17 10:20
 Summary: Issue 0 Index
+Category: issues
 Slug: issue-0
 
 ## April 2023

@@ -5,49 +5,93 @@
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
                         <title>CTRL+ALT+DH - Olivia Afonso</title>
-                        <link rel="stylesheet" href="https://cmiya.github.io/ctrl-alt-dh/theme/css/main.css" />
+                        <link rel="stylesheet" href="/theme/css/main.css" />
         </head>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggles = document.querySelectorAll('#banner nav li.dropdown .dropdown-toggle');
+                    toggles.forEach(toggle => {
+                        toggle.addEventListener('click', function (e) {
+                            e.stopPropagation(); // don’t bubble up to document
+                            const parentLi = this.closest('li.dropdown');
+                            // close others
+                            document.querySelectorAll('#banner nav li.dropdown').forEach(li => {
+                                if (li !== parentLi) li.classList.remove('open');
+                            });
+                            // toggle current
+                            parentLi.classList.toggle('open');
+                        });
+                    });
+                
+                    // optional: close if clicking outside
+                    document.addEventListener('click', function () {
+                        document.querySelectorAll('#banner nav li.dropdown').forEach(li => li.classList.remove('open'));
+                    });
+                });
+        </script>
+                
 
         <body id="index" class="home">
                 <header id="banner" class="body">
                         <h1>
 
-                                <!-- <a href="https://cmiya.github.io/ctrl-alt-dh/">CTRL+ALT+DH</a> -->
                                 <div class="site-logo">
-                                        <a href="https://cmiya.github.io/ctrl-alt-dh/"><img src="https://cmiya.github.io/ctrl-alt-dh/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
+                                        <a href="/"><img src="/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
                                 </div>
                         </h1>
 
                         <nav><ul>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/about.html">About</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/team.html">Team</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/submissions.html">Submissions</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/tags.html">Browse</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/category/news.html">News</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">About</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/who-we-are.html">Who We Are</a></li>
+                                                <li><a href="/team.html">Team</a></li>
+                                                <li><a href="/contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Issues</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/issue-0.html">Issue 0</a></li>
+                                                <li><a href="/issue-1.html">Issue 1: Creating CTRL-ALT-DH</a></li>
+                                                <li><a href="/issue-2.html">Issue 2: Digital Dilemmas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Submissions</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/guidelines.html">Guidelines</a></li>
+                                                <li><a href="/cfp-2024.html">CFP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/tags.html">Browse</a></li>
+                                    <li><a href="/category/news.html">News</a></li>
+ 
                         </ul></nav>
                 </header><!-- /#banner -->
 
                 <aside id="featured" class="body">
                     <article>
-                        <h1 class="entry-title"><a href="https://cmiya.github.io/ctrl-alt-dh/ctrlaltdh-2023-the-process-and-the-future-a-video.html">CTRL+ALT+DH 2023: The Process and the Future A Video</a></h1>
+                        <h1 class="entry-title"><a href="/ctrlaltdh-2023-the-process-and-the-future-a-video.html">CTRL+ALT+DH 2023: The Process and the Future A Video</a></h1>
 <footer class="post-info">
 
 
                 <address class="vcard author">
-                        <h3>Author(s)</h3>                                 <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/olivia-afonso.html">Olivia Afonso</a>
-                                <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/kevin-wang.html">Kevin Wang</a>
+                        <h3>Author(s)</h3>                                 <a class="url fn" href="/author/olivia-afonso.html">Olivia Afonso</a>
+                                <a class="url fn" href="/author/kevin-wang.html">Kevin Wang</a>
                 </address>
 
         <!--NOTE: pelican automatically categorizes posts as posts; to keep this info from displaying use article.category.name!= 'posts'-->
         
         <h3>Issue</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/issue-1.html">Issue 1</a>
+        <a href="/issue-1.html">Issue 1</a>
 
         <h3>Tags</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/interview.html">interview</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/video.html">video</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/publishing.html">publishing</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/student.html">student</a>
+        <a href="/tag/interview.html">interview</a>
+        <a href="/tag/video.html">video</a>
+        <a href="/tag/publishing.html">publishing</a>
+        <a href="/tag/student.html">student</a>
 
         
 
@@ -72,7 +116,7 @@
 
                 <li><article class="hentry">
                     <header>
-                        <h1><a href="https://cmiya.github.io/ctrl-alt-dh/issue-1-editorial.html" rel="bookmark"
+                        <h1><a href="/issue-1-editorial.html" rel="bookmark"
                                title="Permalink to Issue 1 Editorial">Issue 1 Editorial</a></h1>
                     </header>
 
@@ -81,23 +125,23 @@
 
 
                 <address class="vcard author">
-                        <h3>Author(s)</h3>                                 <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/olivia-afonso.html">Olivia Afonso</a>
-                                <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/jackson-grant.html">Jackson Grant</a>
-                                <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/jacquelyn-passarelli.html">Jacquelyn Passarelli</a>
-                                <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/jessie-pajak.html">Jessie Pajak</a>
+                        <h3>Author(s)</h3>                                 <a class="url fn" href="/author/olivia-afonso.html">Olivia Afonso</a>
+                                <a class="url fn" href="/author/jackson-grant.html">Jackson Grant</a>
+                                <a class="url fn" href="/author/jacquelyn-passarelli.html">Jacquelyn Passarelli</a>
+                                <a class="url fn" href="/author/jessie-pajak.html">Jessie Pajak</a>
                 </address>
 
         <!--NOTE: pelican automatically categorizes posts as posts; to keep this info from displaying use article.category.name!= 'posts'-->
         
         <h3>Issue</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/issue-1.html">Issue 1</a>
+        <a href="/issue-1.html">Issue 1</a>
 
         <h3>Tags</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/open-access.html">open access</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/publishing.html">publishing</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/digital-culture.html">digital culture</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/technology.html">technology</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/editorial.html">editorial</a>
+        <a href="/tag/open-access.html">open access</a>
+        <a href="/tag/publishing.html">publishing</a>
+        <a href="/tag/digital-culture.html">digital culture</a>
+        <a href="/tag/technology.html">technology</a>
+        <a href="/tag/editorial.html">editorial</a>
 
         
 
@@ -108,34 +152,11 @@
 
         </div>
 
-</footer><!-- /.post-info -->                        <a class="readmore" href="https://cmiya.github.io/ctrl-alt-dh/issue-1-editorial.html">read more</a>
+</footer><!-- /.post-info -->                        <a class="readmore" href="/issue-1-editorial.html">read more</a>
                     </div><!-- /.entry-content -->
                 </article></li>
                     </ol><!-- /#posts-list -->
                     </section><!-- /#content -->
-
-                <!--
-
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="ctrlaltdh@gmail.com">Contact Us</a></li>
-                                                        <li><a href="https://www.uoguelph.ca/arts/cts">CTS</a></li>
-                                        </ul>
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-
-                                                        <li><a href="@CtrlAltDH">Instagram</a></li>
-                                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/">GitHub</a></li>
-                                        </ul>
-                                </div>
-                </section>
-
-                -->
-                
-                <!-- /#extras -->
 
 
                 <div class ="footer">

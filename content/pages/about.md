@@ -1,9 +1,8 @@
-Title: About
-Slug: about
+Title: Who We Are
+Slug: who-we-are
 Date: 2010-12-03 10:20
 Modified: 2010-12-05 19:30
-Category: Python
-Tags: pelican, publishing
+Category: About
 Authors: Alexis Metaireau, Conan Doyle
 Summary: Short version for index and feeds
 

@@ -5,47 +5,91 @@
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
                         <title>CTRL+ALT+DH - reflection tag</title>
-                        <link rel="stylesheet" href="https://cmiya.github.io/ctrl-alt-dh/theme/css/main.css" />
+                        <link rel="stylesheet" href="/theme/css/main.css" />
         </head>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggles = document.querySelectorAll('#banner nav li.dropdown .dropdown-toggle');
+                    toggles.forEach(toggle => {
+                        toggle.addEventListener('click', function (e) {
+                            e.stopPropagation(); // don’t bubble up to document
+                            const parentLi = this.closest('li.dropdown');
+                            // close others
+                            document.querySelectorAll('#banner nav li.dropdown').forEach(li => {
+                                if (li !== parentLi) li.classList.remove('open');
+                            });
+                            // toggle current
+                            parentLi.classList.toggle('open');
+                        });
+                    });
+                
+                    // optional: close if clicking outside
+                    document.addEventListener('click', function () {
+                        document.querySelectorAll('#banner nav li.dropdown').forEach(li => li.classList.remove('open'));
+                    });
+                });
+        </script>
+                
 
         <body id="index" class="home">
                 <header id="banner" class="body">
                         <h1>
 
-                                <!-- <a href="https://cmiya.github.io/ctrl-alt-dh/">CTRL+ALT+DH</a> -->
                                 <div class="site-logo">
-                                        <a href="https://cmiya.github.io/ctrl-alt-dh/"><img src="https://cmiya.github.io/ctrl-alt-dh/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
+                                        <a href="/"><img src="/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
                                 </div>
                         </h1>
 
                         <nav><ul>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/about.html">About</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/team.html">Team</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/submissions.html">Submissions</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/tags.html">Browse</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/category/news.html">News</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">About</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/who-we-are.html">Who We Are</a></li>
+                                                <li><a href="/team.html">Team</a></li>
+                                                <li><a href="/contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Issues</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/issue-0.html">Issue 0</a></li>
+                                                <li><a href="/issue-1.html">Issue 1: Creating CTRL-ALT-DH</a></li>
+                                                <li><a href="/issue-2.html">Issue 2: Digital Dilemmas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Submissions</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/guidelines.html">Guidelines</a></li>
+                                                <li><a href="/cfp-2024.html">CFP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/tags.html">Browse</a></li>
+                                    <li><a href="/category/news.html">News</a></li>
+ 
                         </ul></nav>
                 </header><!-- /#banner -->
 
                 <aside id="featured" class="body">
                     <article>
-                        <h1 class="entry-title"><a href="https://cmiya.github.io/ctrl-alt-dh/an-essay-about-the-unexpected-obstacles-of-creating-a-journal.html">An Essay about the Unexpected Obstacles of Creating a Journal</a></h1>
+                        <h1 class="entry-title"><a href="/an-essay-about-the-unexpected-obstacles-of-creating-a-journal.html">An Essay about the Unexpected Obstacles of Creating a Journal</a></h1>
 <footer class="post-info">
 
 
                 <address class="vcard author">
-                        <h3>Author(s)</h3>                                 <a class="url fn" href="https://cmiya.github.io/ctrl-alt-dh/author/jackson-grant.html">Jackson Grant</a>
+                        <h3>Author(s)</h3>                                 <a class="url fn" href="/author/jackson-grant.html">Jackson Grant</a>
                 </address>
 
         <!--NOTE: pelican automatically categorizes posts as posts; to keep this info from displaying use article.category.name!= 'posts'-->
         
         <h3>Issue</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/issue-1.html">Issue 1</a>
+        <a href="/issue-1.html">Issue 1</a>
 
         <h3>Tags</h3>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/reflection.html">reflection</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/publishing.html">publishing</a>
-        <a href="https://cmiya.github.io/ctrl-alt-dh/tag/essay.html">essay</a>
+        <a href="/tag/reflection.html">reflection</a>
+        <a href="/tag/publishing.html">publishing</a>
+        <a href="/tag/essay.html">essay</a>
 
         
 
@@ -63,29 +107,6 @@
 <p>One last issue to touch on for the journal that is a bit more specific is trying to acquire an ISSN number for the journal. An ISSN, or an International Standard Serial Number, is a number given to certain types of publications such as magazines, newspapers, or journals that is mandatory for them to be recognized in the legal deposit. To put it very simply, it is something that legitimizes the journal. Before starting this journal, several students were unaware of the ISSN even being something a journal would require, and those that were aware of it figured it would be a simple procedure. It started off simple enough, with the student who was responsible with acquiring it filling out an ISSN application form and then submitting it. This soon took a turn for the worse though, as the student had to email the team behind the application process for around a month trying to work around several difficulties that kept popping up. This persisted until the news that the original plan for the journal was not going to happen, and then the application was suspended from there. As for how the student faced the issue, ensuring that everything stayed organized and up to date in terms of both the discussion with the ISSN issues as well as their other duties to their teams was critical. It could be easy to get distracted by one thing or another and then forget to be on top of the ISSN and figure out the best course of action moving forward.</p>
 <p>In conclusion, there can be many issues that arise when it comes to creating a journal, especially if it is a group’s first time attempting anything like it. A lack of submissions, people not all having the same level of experience, or having trouble getting an ISSN number are just a few of the many issues a project like this can face. It is clear that a combination of planning and flexibility is required for a project like this to work, and hopefully this essay outlined a few issues for any future teams working on a journal to look out for or avoid. Of course, this is a new course in general, so it is always possible that some of the logistical issues could be mitigated over time as everyone becomes more comfortable with the formula or new ones could pop us as it develops.</p>                    </article>
                 </aside><!-- /#featured -->
-
-                <!--
-
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="ctrlaltdh@gmail.com">Contact Us</a></li>
-                                                        <li><a href="https://www.uoguelph.ca/arts/cts">CTS</a></li>
-                                        </ul>
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-
-                                                        <li><a href="@CtrlAltDH">Instagram</a></li>
-                                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/">GitHub</a></li>
-                                        </ul>
-                                </div>
-                </section>
-
-                -->
-                
-                <!-- /#extras -->
 
 
                 <div class ="footer">

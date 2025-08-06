@@ -2,6 +2,7 @@ Title: Issue 2: Digital Dilemmas
 Date: 2024-11-07 10:20
 Modified: 2010-12-05 19:30
 Summary: Issue 02 Index
+Category: issues
 Slug: issue-2
 
 ## Dec. 2025

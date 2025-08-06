@@ -58,7 +58,7 @@ hr { border: 2px solid #EEEEEE; }
 /* Anchors */
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
-a:link, a:visited {
+a {
     color: #643D4B;
     text-decoration: none;
     padding: 0 1px;
@@ -212,7 +212,6 @@ img.left, figure.left, div.figure.align-left {
 
 #banner h1 strong {font-size: 0.36em; font-weight: normal;}
 
-
 /* Main Nav */
 
 #banner nav {
@@ -225,13 +224,6 @@ img.left, figure.left, div.figure.align-left {
     padding: 0;
     text-align: center;
     border-radius: 5px;
-    border-radius: 5px;
-}
-
-#banner nav::after {
-    content: "";
-    display: block;
-    clear: both;
 }
 
 #banner nav ul {
@@ -246,7 +238,8 @@ img.left, figure.left, div.figure.align-left {
     margin: 0;
 }
 
-#banner nav a {
+#banner nav a:link,
+#banner nav a:visited {
     color: #fff;
     display: inline-block;
     height: 30px;
@@ -265,66 +258,58 @@ img.left, figure.left, div.figure.align-left {
 
 #banner nav li:first-child a {
     border-top-left-radius: 5px;
+
     border-bottom-left-radius: 5px;
 }
 
 /* Dropdown Styles */
 
+/* Keep your existing main nav styles ... */
+
+/* 1. Position parent dropdown correctly */
 #banner nav li.dropdown {
     position: relative;
 }
 
-#banner nav li.dropdown .dropdown-toggle {
-    cursor: pointer;
-    padding: 5px 1.5em;
-    color: #fff;
-    display: inline-block;
-}
-
-#banner nav li.dropdown .dropdown-toggle:hover {
-    background: #3D6456;
-}
-
+/* 2. Style the dropdown menu */
 #banner nav li.dropdown ul.dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 100%; /* directly under the parent link */
     left: 0;
     background: #29423A;
     list-style: none;
     margin: 0;
     padding: 0;
     min-width: 150px;
-    z-index: 9999;
     border-radius: 0 0 5px 5px;
+    z-index: 9999;
 }
 
+/* 3. Ensure submenu items stack vertically */
 #banner nav li.dropdown ul.dropdown-menu li {
     float: none;
     display: block;
 }
 
+/* 4. Style submenu links */
 #banner nav li.dropdown ul.dropdown-menu a {
     display: block;
     padding: 8px 1.5em;
-    color: #fff;
+    height: auto;
+    line-height: 1.4em;
     text-align: left;
-    text-decoration: none;
-    font-size: .75em;
-    white-space: normal;   /* allow wrapping */
-    line-height: 1.4em;    /* more comfortable spacing for multiple lines */
-    height: auto;          /* remove fixed height from top-level nav items */
+    color: #fff;
 }
 
 #banner nav li.dropdown ul.dropdown-menu a:hover {
     background: #3D6456;
 }
 
-#banner nav li.dropdown.open ul.dropdown-menu {
+/* 5. Show submenu on hover */
+#banner nav li.dropdown:hover ul.dropdown-menu {
     display: block;
 }
-
-
 
 /*
 	Issues
@@ -385,7 +370,6 @@ img.left, figure.left, div.figure.align-left {
     color: grey;
     font-style: italic;
 }
-
 
 /*
 	Featured
@@ -537,7 +521,6 @@ img.left, figure.left, div.figure.align-left {
     margin-right: 5em;
 }
 
-
 /***** Sections *****/
 /* Blog */
 .hentry {
@@ -597,6 +580,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
     font-style: normal;
     margin: 2em 0;
     padding: 10px 20px 15px 20px;
+
     border-radius: 5px;
 }
 
@@ -617,6 +601,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
     font-style: normal;
     margin: 0;
     padding: 15px 20px;
+
     border-radius: 5px;
 }
 #comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
@@ -635,3 +620,59 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 #add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 #add-comment * {margin-bottom: .5em;}
+
+#banner nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Dropdown (click-to-open) */
+#banner nav li.dropdown { position: relative; }
+
+#banner nav li.dropdown > a.dropdown-toggle,
+#banner nav li.dropdown > a {
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#banner nav li.dropdown ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #29423A;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 180px;
+    border-radius: 0 0 5px 5px;
+    z-index: 9999;
+}
+
+#banner nav li.dropdown ul.dropdown-menu li {
+    float: none;
+    display: block;
+}
+
+#banner nav li.dropdown ul.dropdown-menu a {
+    display: block;
+    padding: 8px 1.5em;
+    height: auto;
+    line-height: 1.4em;
+    white-space: normal; /* allow wrapping for long titles */
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75em;
+}
+
+#banner nav li.dropdown ul.dropdown-menu a:hover {
+    background: #3D6456;
+}
+
+/* toggled by JS */
+#banner nav li.dropdown.open > ul.dropdown-menu { display: block; }

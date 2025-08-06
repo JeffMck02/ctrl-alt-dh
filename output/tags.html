@@ -5,25 +5,69 @@
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <meta name="generator" content="Pelican" />
                         <title>CTRL+ALT+DH - Tags</title>
-                        <link rel="stylesheet" href="https://cmiya.github.io/ctrl-alt-dh/theme/css/main.css" />
+                        <link rel="stylesheet" href="/theme/css/main.css" />
         </head>
+
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggles = document.querySelectorAll('#banner nav li.dropdown .dropdown-toggle');
+                    toggles.forEach(toggle => {
+                        toggle.addEventListener('click', function (e) {
+                            e.stopPropagation(); // don’t bubble up to document
+                            const parentLi = this.closest('li.dropdown');
+                            // close others
+                            document.querySelectorAll('#banner nav li.dropdown').forEach(li => {
+                                if (li !== parentLi) li.classList.remove('open');
+                            });
+                            // toggle current
+                            parentLi.classList.toggle('open');
+                        });
+                    });
+                
+                    // optional: close if clicking outside
+                    document.addEventListener('click', function () {
+                        document.querySelectorAll('#banner nav li.dropdown').forEach(li => li.classList.remove('open'));
+                    });
+                });
+        </script>
+                
 
         <body id="index" class="home">
                 <header id="banner" class="body">
                         <h1>
 
-                                <!-- <a href="https://cmiya.github.io/ctrl-alt-dh/">CTRL+ALT+DH</a> -->
                                 <div class="site-logo">
-                                        <a href="https://cmiya.github.io/ctrl-alt-dh/"><img src="https://cmiya.github.io/ctrl-alt-dh/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
+                                        <a href="/"><img src="/images/ctrl-logo.png" alt="CTRL+ALT+DH" /></a>
                                 </div>
                         </h1>
 
                         <nav><ul>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/about.html">About</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/team.html">Team</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/submissions.html">Submissions</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/tags.html">Browse</a></li>
-                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/category/news.html">News</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">About</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/who-we-are.html">Who We Are</a></li>
+                                                <li><a href="/team.html">Team</a></li>
+                                                <li><a href="/contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Issues</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/issue-0.html">Issue 0</a></li>
+                                                <li><a href="/issue-1.html">Issue 1: Creating CTRL-ALT-DH</a></li>
+                                                <li><a href="/issue-2.html">Issue 2: Digital Dilemmas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">Submissions</a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="/guidelines.html">Guidelines</a></li>
+                                                <li><a href="/cfp-2024.html">CFP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/tags.html">Browse</a></li>
+                                    <li><a href="/category/news.html">News</a></li>
+ 
                         </ul></nav>
                 </header><!-- /#banner -->
 <section id="content" class="body">
@@ -33,22 +77,22 @@
 <div class="issue-covers">
 
 <figure>
-<a href="https://cmiya.github.io/ctrl-alt-dh/issue-2.html">
-<img src="https://cmiya.github.io/ctrl-alt-dh/images/cover-issue2.png">
+<a href="/issue-2.html">
+<img src="/images/cover-issue2.png">
 </a>
 <figcaption>December 2025, Issue 2</figcaption>
 </figure>
 
 <figure>
-<a href="https://cmiya.github.io/ctrl-alt-dh/issue-1.html">
-<img src="https://cmiya.github.io/ctrl-alt-dh/images/cover-issue1.png">
+<a href="/issue-1.html">
+<img src="/images/cover-issue1.png">
 </a>
 <figcaption>December 2023, Issue 1</figcaption>
 </figure>
 
 <figure>
-<a href="https://cmiya.github.io/ctrl-alt-dh/issue-0.html">
-<img src="https://cmiya.github.io/ctrl-alt-dh/images/cover-issue0.png">
+<a href="/issue-0.html">
+<img src="/images/cover-issue0.png">
 </a>
 <figcaption>April 2023, Issue 0</figcaption>
 </figure>
@@ -57,66 +101,43 @@
 
     <h1>Browse By Tag</h1>
     <ul>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/audio.html">audio</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/blog.html">blog</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/collage.html">collage</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/community.html">community</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/data.html">data</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/digital-culture.html">digital culture</a> (3)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/editorial.html">editorial</a> (3)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/essay.html">essay</a> (4)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/ethics.html">ethics</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/feminism.html">feminism</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/game.html">game</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/guide.html">guide</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/identity.html">identity</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/infographic.html">infographic</a> (2)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/interview.html">interview</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/mapping.html">mapping</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/music.html">music</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/open-access.html">open access</a> (2)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/open-source.html">open-source</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/phyiscal-media.html">phyiscal media</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/podcast.html">podcast</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/poetry.html">poetry</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/publishing.html">publishing</a> (6)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/reflection.html">reflection</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/research-creation.html">research-creation</a> (7)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/short-story.html">short story</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/social-media.html">social media</a> (2)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/student.html">student</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/surveillance.html">surveillance</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/technology.html">technology</a> (3)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/twine.html">Twine</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/video.html">video</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/wikipedia.html">wikipedia</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/youtube.html">YouTube</a> (1)</li>
-            <li><a href="https://cmiya.github.io/ctrl-alt-dh/tag/zine.html">zine</a> (1)</li>
+            <li><a href="/tag/audio.html">audio</a> (1)</li>
+            <li><a href="/tag/blog.html">blog</a> (1)</li>
+            <li><a href="/tag/collage.html">collage</a> (1)</li>
+            <li><a href="/tag/community.html">community</a> (1)</li>
+            <li><a href="/tag/data.html">data</a> (1)</li>
+            <li><a href="/tag/digital-culture.html">digital culture</a> (3)</li>
+            <li><a href="/tag/editorial.html">editorial</a> (3)</li>
+            <li><a href="/tag/essay.html">essay</a> (4)</li>
+            <li><a href="/tag/ethics.html">ethics</a> (1)</li>
+            <li><a href="/tag/feminism.html">feminism</a> (1)</li>
+            <li><a href="/tag/game.html">game</a> (1)</li>
+            <li><a href="/tag/guide.html">guide</a> (1)</li>
+            <li><a href="/tag/identity.html">identity</a> (1)</li>
+            <li><a href="/tag/infographic.html">infographic</a> (2)</li>
+            <li><a href="/tag/interview.html">interview</a> (1)</li>
+            <li><a href="/tag/mapping.html">mapping</a> (1)</li>
+            <li><a href="/tag/music.html">music</a> (1)</li>
+            <li><a href="/tag/open-access.html">open access</a> (2)</li>
+            <li><a href="/tag/open-source.html">open-source</a> (1)</li>
+            <li><a href="/tag/phyiscal-media.html">phyiscal media</a> (1)</li>
+            <li><a href="/tag/podcast.html">podcast</a> (1)</li>
+            <li><a href="/tag/poetry.html">poetry</a> (1)</li>
+            <li><a href="/tag/publishing.html">publishing</a> (6)</li>
+            <li><a href="/tag/reflection.html">reflection</a> (1)</li>
+            <li><a href="/tag/research-creation.html">research-creation</a> (7)</li>
+            <li><a href="/tag/short-story.html">short story</a> (1)</li>
+            <li><a href="/tag/social-media.html">social media</a> (2)</li>
+            <li><a href="/tag/student.html">student</a> (1)</li>
+            <li><a href="/tag/surveillance.html">surveillance</a> (1)</li>
+            <li><a href="/tag/technology.html">technology</a> (3)</li>
+            <li><a href="/tag/twine.html">Twine</a> (1)</li>
+            <li><a href="/tag/video.html">video</a> (1)</li>
+            <li><a href="/tag/wikipedia.html">wikipedia</a> (1)</li>
+            <li><a href="/tag/youtube.html">YouTube</a> (1)</li>
+            <li><a href="/tag/zine.html">zine</a> (1)</li>
     </ul>
 </section>
-
-                <!--
-
-                <section id="extras" class="body">
-                                <div class="blogroll">
-                                        <h2>links</h2>
-                                        <ul>
-                                                        <li><a href="ctrlaltdh@gmail.com">Contact Us</a></li>
-                                                        <li><a href="https://www.uoguelph.ca/arts/cts">CTS</a></li>
-                                        </ul>
-                                <div class="social">
-                                        <h2>social</h2>
-                                        <ul>
-
-                                                        <li><a href="@CtrlAltDH">Instagram</a></li>
-                                                        <li><a href="https://cmiya.github.io/ctrl-alt-dh/">GitHub</a></li>
-                                        </ul>
-                                </div>
-                </section>
-
-                -->
-                
-                <!-- /#extras -->
 
 
                 <div class ="footer">

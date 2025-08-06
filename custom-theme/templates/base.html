@@ -17,70 +17,72 @@
                 {% endblock head %}
         </head>
 
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const toggles = document.querySelectorAll('#banner nav li.dropdown .dropdown-toggle');
+                    toggles.forEach(toggle => {
+                        toggle.addEventListener('click', function (e) {
+                            e.stopPropagation(); // don’t bubble up to document
+                            const parentLi = this.closest('li.dropdown');
+                            // close others
+                            document.querySelectorAll('#banner nav li.dropdown').forEach(li => {
+                                if (li !== parentLi) li.classList.remove('open');
+                            });
+                            // toggle current
+                            parentLi.classList.toggle('open');
+                        });
+                    });
+                
+                    // optional: close if clicking outside
+                    document.addEventListener('click', function () {
+                        document.querySelectorAll('#banner nav li.dropdown').forEach(li => li.classList.remove('open'));
+                    });
+                });
+        </script>
+                
+
         <body id="index" class="home">
                 {% include 'github.html' %}
                 <header id="banner" class="body">
                         <h1>
 
-                                <!-- <a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a> -->
                                 <div class="site-logo">
                                         <a href="{{ SITEURL }}/"><img src="{{ SITEURL }}/images/ctrl-logo.png" alt="{{ SITENAME }}" /></a>
                                 </div>
                         </h1>
 
                         <nav><ul>
-                                {% for title, link in MENUITEMS %}
-                                        <li><a href="{{ link }}">{{ title }}</a></li>
-                                {% endfor %}
+                                {% for item in MENUITEMS %}
+                                {% if item[1] is iterable and item[1] is not string %}
+                                    {# This is a dropdown #}
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">{{ item[0] }}</a>
+                                        <ul class="dropdown-menu">
+                                            {% for sub_title, sub_link in item[1] %}
+                                                <li><a href="{{ SITEURL }}{{ sub_link }}">{{ sub_title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </li>
+                                {% else %}
+                                    {# This is a normal link #}
+                                    <li><a href="{{ SITEURL }}{{ item[1] }}">{{ item[0] }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                                {# Keep your existing optional blocks as-is #}
                                 {% if DISPLAY_PAGES_ON_MENU -%}
                                         {% for pg in pages %}
-                                                <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+                                        <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
                                         {% endfor %}
                                 {% endif %}
                                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
                                         {% for cat, null in categories %}
-                                                <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                                        <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                                         {% endfor %}
-                                {% endif %}
+                                {% endif %} 
                         </ul></nav>
                 </header><!-- /#banner -->
                 {% block content %}
                 {% endblock %}
-
-                <!--
-
-                <section id="extras" class="body">
-                        {% if LINKS %}
-                                <div class="blogroll">
-                                        <h2>{{ LINKS_WIDGET_NAME | default('links') }}</h2>
-                                        <ul>
-                                                {% for name, link in LINKS %}
-                                                        <li><a href="{{ link }}">{{ name }}</a></li>
-                                                {% endfor %}
-                                        </ul>
-                        {% endif %}
-                        {% if SOCIAL or FEED_ALL_ATOM or FEED_ALL_RSS %}
-                                <div class="social">
-                                        <h2>{{ SOCIAL_WIDGET_NAME | default('social') }}</h2>
-                                        <ul>
-                                                {% if FEED_ALL_ATOM %}
-                                                        <li><a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                                                {% endif %}
-                                                {% if FEED_ALL_RSS %}
-                                                        <li><a href="{{ FEED_DOMAIN }}/{% if FEED_ALL_RSS_URL %}{{ FEED_ALL_RSS_URL }}{% else %}{{ FEED_ALL_RSS }}{% endif %}" type="application/rss+xml" rel="alternate">rss feed</a></li>
-                                                {% endif %}
-
-                                                {% for name, link in SOCIAL %}
-                                                        <li><a href="{{ link }}">{{ name }}</a></li>
-                                                {% endfor %}
-                                        </ul>
-                                </div>
-                        {% endif %}
-                </section>
-
-                -->
-                
-                <!-- /#extras -->
 
 
                 <div class ="footer">

@@ -1,7 +1,8 @@
-Title: Issue 1
+Title: Issue 1: Creating CTRL-ALT-DH
 Date: 2023-12-07 10:20
 Modified: 2023-12-07 10:20
 Summary: Issue 01 Index
+Category: issues
 Slug: issue-1
 
 ## Dec. 2023

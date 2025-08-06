@@ -212,33 +212,52 @@ img.left, figure.left, div.figure.align-left {
 
 #banner h1 strong {font-size: 0.36em; font-weight: normal;}
 
-	/* Main Nav */
+
+/* Main Nav */
+
 #banner nav {
     background: #29423A;
     font-family: 'Roboto', arial, serif;
     font-size: 1em;
-    overflow: auto;
+    overflow: visible;
     line-height: 30px;
     margin-top: auto;
     padding: 0;
     text-align: center;
     border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
-#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
-#banner nav li {float: left; display: inline; margin: 0;}
+#banner nav::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
-#banner nav a:link, #banner nav a:visited {
+#banner nav ul {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#banner nav li {
+    float: left;
+    display: inline;
+    margin: 0;
+}
+
+#banner nav a {
     color: #fff;
     display: inline-block;
     height: 30px;
     padding: 5px 1.5em;
     text-decoration: none;
 }
-#banner nav a:hover, #banner nav a:active,
-#banner nav .active a:link, #banner nav .active a:visited {
+
+#banner nav a:hover,
+#banner nav a:active,
+#banner nav .active a:link,
+#banner nav .active a:visited {
     background: #3D6456;
     color: #fff;
     text-shadow: none !important;
@@ -246,13 +265,66 @@ img.left, figure.left, div.figure.align-left {
 
 #banner nav li:first-child a {
     border-top-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-
     border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
 }
+
+/* Dropdown Styles */
+
+#banner nav li.dropdown {
+    position: relative;
+}
+
+#banner nav li.dropdown .dropdown-toggle {
+    cursor: pointer;
+    padding: 5px 1.5em;
+    color: #fff;
+    display: inline-block;
+}
+
+#banner nav li.dropdown .dropdown-toggle:hover {
+    background: #3D6456;
+}
+
+#banner nav li.dropdown ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #29423A;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    z-index: 9999;
+    border-radius: 0 0 5px 5px;
+}
+
+#banner nav li.dropdown ul.dropdown-menu li {
+    float: none;
+    display: block;
+}
+
+#banner nav li.dropdown ul.dropdown-menu a {
+    display: block;
+    padding: 8px 1.5em;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    font-size: .75em;
+    white-space: normal;   /* allow wrapping */
+    line-height: 1.4em;    /* more comfortable spacing for multiple lines */
+    height: auto;          /* remove fixed height from top-level nav items */
+}
+
+#banner nav li.dropdown ul.dropdown-menu a:hover {
+    background: #3D6456;
+}
+
+#banner nav li.dropdown.open ul.dropdown-menu {
+    display: block;
+}
+
+
 
 /*
 	Issues
@@ -327,8 +399,6 @@ img.left, figure.left, div.figure.align-left {
     max-width: 75%;
     min-width: 75%;
     border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
 }
 /* 
 #featured figure {
@@ -360,8 +430,6 @@ img.left, figure.left, div.figure.align-left {
     max-width: 75%;
     min-width: 75%;
     border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
 }
 
 /*
@@ -419,8 +487,6 @@ img.left, figure.left, div.figure.align-left {
     max-width: 760px;
 
     border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
 }
 
 #about .primary {float: left; max-width: 165px;}
@@ -531,10 +597,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
     font-style: normal;
     margin: 2em 0;
     padding: 10px 20px 15px 20px;
-
     border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
 
 #about-author strong {
@@ -554,10 +617,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
     font-style: normal;
     margin: 0;
     padding: 15px 20px;
-
     border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
 #comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
 
