@@ -9,7 +9,7 @@ Slug: issue-2
 
 <div class="index-cover">
 <figure>
-<img src="{static}/images/cover-issue2.png">
+<img src="{static}/images/cover-issue2.webp">
 </figure>
 </div>
 
