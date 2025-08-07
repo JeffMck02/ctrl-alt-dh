@@ -8,7 +8,10 @@ Bio: I'm a third-year undergraduate student pursuing a Bachelor of Arts in Cultu
 Acknowledgements:
 Abstract:
 
-<figcaption>Image 1. Splash Page of Alive in their garden.</figcaption>
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig1.webp">
+<figcaption>Figure 1. Splash Page of Alive in their garden.</figcaption>
+</figure>
 
 ## Introduction:
 
@@ -25,41 +28,51 @@ In our exploration of “Alive in their garden,” we are introduced to a collec
 When you first enter “Alive In their garden,” you initially encounter a 360 panoramic view of the museum and its detailed floor plan. This panoramic view gives you a comprehensive bird’s-eye view of the entire space, laying out the art and rooms before you. Then, it shifts to a dollhouse view, which zooms in closer, showing the museum’s layout in 3D. This lets you virtually walk through the exhibition, moving from room to room and piece to piece as if you were there in person.
 
 
-
-<figcaption> Image 2. 360 panoramic view of the museum. </figcaption>
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig2.webp">
+<figcaption> Figure 2. 360 panoramic view of the museum. </figcaption>
+</figure>
 
 ### 2. Exploring Art Up Close
 
 After the panoramic view, you dive into the exhibition using the floor plan to move freely with your cursor. Directly head towards any artwork that grabs your attention. This interactive exploration lets you control your journey, room by room, piece by piece. Once you click on an artwork, a sidebar pops up, sharing the artwork’s story, its title, and the artist’s name. This feature turns every click into a chance for a deeper connection with the art, letting you uncover the rich narratives and ideas behind each piece.
 
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig3.webp">
+<figcaption>Figure 3. Close up of Felicita “Felli” Maynard piece. </figcaption>
+</figure>
 
-
-<figcaption>Image 3. Close up of Felicita “Felli” Maynard piece. </figcaption>
-
-
-
-<figcaption>Image 4. Wide view of the room.</figcaption>
-
-
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig4.webp">
+<figcaption>Figure 4. Wide view of the room.</figcaption>
+</figure>
 
 ### 3. Measurements Feature
 
 The measurements feature helps you figure out the distance between paintings or how far you are from a piece.
 
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig5.webp">
 <figcaption>Figure 5. The measurement feature in action.</figcaption>
+</figure>
 
 ### 4. The VR Experience
 
 There is also an option to connect your VR headset to the simulation for a fully immersive, three-dimensional experience.
 
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig6.webp">
 <figcaption>Figure 6. VR headset option.</figcaption>
+</figure>
 
 ### 5. Accessibility
 
 The exhibition offers language options in English and Spanish, making it accessible to a wider audience.
 
+<figure class="art-image">
+<img src="{static}/images/issue2-images/2-10-fig7.webp">
 <figcaption>Figure 7. Accessibility feature for Alive in their garden.</figcaption>
-
+</figure>
 
 
 ## Reflection
@@ -78,9 +91,7 @@ Sourcing artwork from a diverse group of artists ensures a rich variety of persp
 
 ## Bibliography
 
-Pena, M., & Figueroa-Vásquez, Y. Alive in their garden. (2023). Exhibition. March 17 – April
-
-28. Smith College, Michigan State University. Reviewed by Gimena del Rio Riande. Consejo Nacional de Investigaciones Científicas y Técnicas. Retrieved from https://aliveintheirgarden.com/Home-Set
+Pena, M., & Figueroa-Vásquez, Y. Alive in their garden. (2023). Exhibition. March 17 – April 28. Smith College, Michigan State University. Reviewed by Gimena del Rio Riande. Consejo Nacional de Investigaciones Científicas y Técnicas. Retrieved from https://aliveintheirgarden.com/Home-Set
 
 Curators International. Joiri Minaya. n.d. Retrieved from https://curatorsintl.org/about/collaborators/7850-joiri-minaya
 

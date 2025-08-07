@@ -16,12 +16,12 @@ Future students submitting infographics to CTRL+ALT+DH need to ensure that their
 The ideal infographic submission would be in PDF format as it is compatible with the majority of online tools, software, and any hardware that may be used to access the CTRL+ALT+DH platform.
 
 <figure class="art-image">
-<img src="{static}/images/issue1-images/1-8-fig1.png">
+<img src="{static}/images/issue1-images/1-8-fig1.webp">
 <figcaption>What is CTRL+ALT+DH?</figcaption>
 </figure>
 
 <figure class="art-image">
-<img src="{static}/images/issue1-images/1-8-fig2.png">
+<img src="{static}/images/issue1-images/1-8-fig2.webp">
 <figcaption>Journal Publishing: The Purpose and Components of a Journal</figcaption>
 </figure>
 

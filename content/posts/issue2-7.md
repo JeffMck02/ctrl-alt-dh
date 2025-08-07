@@ -120,7 +120,7 @@ Social Blade used to host channel statistics on its website. However, in Novembe
 Additionally, in May 2019, YouTube announced that channels with over 1,000 subscribers would have their public subscriber counts abbreviated (e.g., 432,930 as 432K and 51,389,232 as 51M).[^11] Prior to the change, which took place in September 2019, Social Blade was able to track daily changes in subscriber counts. Afterwards, these figures were only updated in set increments.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img1.png">
+<img src="{static}/images/issue2-images/2-7-img1.webp">
 <figcaption>Image 1. Screenshots of James Charles’ monthly subscriber counts from April 2019 captured from The Internet Archive (left) and April 2023 (right).</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ The Wayback Machine is a digital archive of web pages that allow visitors to vie
 Many apologies we looked at were deleted or made private due to backlash from the apology or the controversy being resolved. Although a fair number of apologies could still be viewed on YouTube in the form of reuploads, the re-uploaded apology did not have the original subscriber or likes data we required. To gather this data, we used the Internet Archive’s Wayback Machine to look at captures of the original.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img2.png">
+<img src="{static}/images/issue2-images/2-7-img2.webp">
 <figcaption>Image 2. Myka Stauffer’s Internet Archive Wayback Machine page for her now-private apology video.</figcaption>
 </figure>
 
@@ -153,14 +153,14 @@ Pandas: A data analysis library. This allowed for sorting by different categorie
 Natural Language Toolkit (NLTK): Allows users to work with and analyze natural language. Using NLTK, we were able to clean up the text and find the frequency of certain words and phrases. Pandas helped organize the text for use with NLTK.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img3.png">
+<img src="{static}/images/issue2-images/2-7-img3.webp">
 <figcaption>Image 3. Code using NLTK to clean up and filter a corpus and obtain most frequent words.</figcaption>
 </figure>
 
 Gensim: A library used for topic modelling. As we shifted the focus of our project, we were unable to do as much as originally planned. However, we used topic modelling on smaller batches of data to test out the tool. 
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img4.png">
+<img src="{static}/images/issue2-images/2-7-img4.webp">
 <figcaption>Image 4. Sample code for topic modelling to determine ten topics with ten keywords each, and its output.</figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ We recorded the following in a spreadsheet:
 - Subscriber count (current and over time)
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img5.png">
+<img src="{static}/images/issue2-images/2-7-img5.webp">
 <figcaption>Image 5. Screenshots of different sections of the spreadsheet created.</figcaption>
 </figure>
 
@@ -196,14 +196,40 @@ Additionally, in May 2019, YouTube announced that channels with over 1,000 subsc
 
 Since some videos are not publicly available on the YouTube site, we created a section for video status, which included:
 
-| Video Status    | Description |
-| -------- | ------- |
-| Original  | The video is on the creator’s channel and is completely public to view.   |
-| Unlisted | The video is on the creator’s channel but is hidden. It is accessible through a specific URL.    |
-| Private    | The video is on the creator’s channel, but it is hidden. It is inaccessible to the public.   |
-| Deleted    | The video does not exist on the channel anymore.   |
-| Terminated   | The YouTuber’s channel itself was taken down by YouTube, and as a result, all their videos have been completely removed.   |
-| Private    | The video is on the creator’s channel, but it is hidden. It is inaccessible to the public.   |
+<div class="art-table">
+<table>
+<thead>
+  <tr>
+    <th>Video Status</th>
+    <th>Description</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Original</td>
+    <td>The video is on the creator’s channel and is completely public to view.</td>
+  </tr>
+  <tr>
+    <td>Unlisted</th>
+    <td>The video is on the creator’s channel but is hidden. It is accessible through a specific URL.</th>
+  </tr>
+  <tr>
+    <td>Private</td>
+    <td>The video is on the creator’s channel, but it is hidden. It is inaccessible to the public.</td>
+  </tr>
+  <tr>
+    <td>Deleted</td>
+    <td>The video does not exist on the channel anymore.</td>
+  </tr>
+  <tr>
+    <td>Terminated</td>
+    <td>The YouTuber’s channel itself was taken down by YouTube, and as a result, all their videos have been completely removed.</td>
+  </tr>
+  <tr>
+    <td>Private</td>
+    <td>The video is on the creator’s channel, but it is hidden. It is inaccessible to the public.</td>
+  </tr>
+</table>
+</div>
 
 
 Different statuses have different effects on a creator’s channel statistics. When a video is unlisted or private, the views from the video are still included in the channel’s all-time view count. However, if a video has been deleted, its views are subtracted from the channel’s all-time views.
@@ -218,17 +244,48 @@ Race: Recorded to see if there was any correlation between racial groups and the
 
 These categories were determined by consulting data collection guides from Public Health Ontario,[^19] which contained the categories below. We also looked at the race categories used by Statistics Canada,[^20] but their specificity was not necessary for our purposes.
 
-| Race Categories    | Description/Examples |
-| -------- | ------- |
-| Black  | African, Afro-Caribbean, African-Canadian descent.    |
-| East Asian | Chinese, Korean, Japanese, Taiwanese descent.     |
-| Latino    | Latin American, Hispanic descent.   |
-| Middle Eastern   | $420    |
-| March    | Arab, Persian, West Asian descent, e.g. Afghan, Egyptian, Iranian, etc.    |
-| South Asian    | South Asian descent, e.g. East Indian, Pakistani, Sri Lankan, Indo-Caribbean, etc.    |
-| Southeast Asian    | Filipino, Vietnamese, Cambodian, Thai, other Southeast Asian descent.  |
-| White    | European descent.   |
-| Another race category   | Another race category (write-in response).    |
+<div class="art-table">
+<table>
+<thead>
+  <tr>
+    <th>Race Categories</th>
+    <th>Description/ Examples</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Black</td>
+    <td>African, Afro-Caribbean, African-Canadian descent.</td>
+  </tr>
+  <tr>
+    <td>East Asian</th>
+    <td>Chinese, Korean, Japanese, Taiwanese descent.</th>
+  </tr>
+  <tr>
+    <td>Latino</td>
+    <td>Latin American, Hispanic descent.</td>
+  </tr>
+  <tr>
+    <td>Middle Eastern</td>
+    <td>Arab, Persian, West Asian descent, e.g. Afghan, Egyptian, Iranian, etc.</td>
+  </tr>
+  <tr>
+    <td>South Asian</td>
+    <td>South Asian descent, e.g. East Indian, Pakistani, Sri Lankan, Indo-Caribbean, etc.</td>
+  </tr>
+  <tr>
+    <td>Southeast Asian </td>
+    <td>Filipino, Vietnamese, Cambodian, Thai, other Southeast Asian descent.</td>
+  </tr>
+  <tr>
+    <td>White</td>
+    <td>European descent.</td>
+  </tr>
+  <tr>
+    <td>Another race category </td>
+    <td>Another race category (write-in response).</td>
+  </tr>
+</table>
+</div>
 
 
 Age: The age of the creator at the time that the video was posted.  
@@ -239,20 +296,60 @@ Channel type: Many YouTubers have secondary channels that are dedicated to conte
 
 Genre: We included YouTubers from across a wide variety of genres because we were interested in seeing if there were any trends within specific communities. We determined several channel genres for categorizing the YouTubers, written below. While some of the genres may seem similar, they are actually distinct types of content. Pranks may be a part of the comedy genre, but there are YouTube channels that are entirely dedicated to pranking.
 
-| Genres   | Description/Examples of content |
-| -------- | ------- |
-| Beauty  | Makeup and fashion.    |
-| Gaming | Commentary, reviews, playthroughs.    |
-| Lifestyle    | Vlogs, storytimes.    |
-| Family | Content focused on the family’s daily life or raising children.    |
-| Commentary    | Covering current events in pop culture.   |
-| Art/music | Visual arts, musicians.     |
-| Health    | Fitness, diet, gym.   |
-| Comedy | Comedy sketches.    |
-| Prank    | Dedicated to pranking on friends, family, or the public.    |
-| Technology | Reviews, demos.     |
-| Food   | Cooking, mukbangs.    |
-
+<div class="art-table">
+<table>
+<thead>
+  <tr>
+    <th>Genres</th>
+    <th>Description/ Examples of Content</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Beauty</td>
+    <td>Makeup and fashion.</td>
+  </tr>
+  <tr>
+    <td>Gaming</th>
+    <td>Commentary, reviews, playthroughs.</th>
+  </tr>
+  <tr>
+    <td>Lifestyle</td>
+    <td>Vlogs, storytimes.</td>
+  </tr>
+  <tr>
+    <td>Family</td>
+    <td>Content focused on the family’s daily life or raising children.</td>
+  </tr>
+  <tr>
+    <td>Commentary</td>
+    <td>Covering current events in pop culture.</td>
+  </tr>
+  <tr>
+    <td>Art/Music</td>
+    <td>Visual arts, musicians.</td>
+  </tr>
+  <tr>
+    <td>Health</td>
+    <td>Fitness, diet, gym.</td>
+  </tr>
+  <tr>
+    <td>Comedy</td>
+    <td>Comedy sketches.</td>
+  </tr>
+  <tr>
+    <td>Prank</td>
+    <td>Dedicated to pranking on friends, family, or the public.</td>
+  </tr>
+  <tr>
+    <td>Technology</td>
+    <td>Reviews, demos.</td>
+  </tr>
+  <tr>
+    <td>Food</td>
+    <td>Cooking, mukbangs.</td>
+  </tr>
+</table>
+</div>
 
 Date joined: This is the date that the main channel was created and helped us gauge the length of the apologist’s YouTube career prior to the scandal.
 
@@ -274,20 +371,65 @@ Channels with apologies before/during 2019 that did not have a proper archive on
 
 The reasons for which viewers demanded the YouTuber’s apology video were categorized into the following:
 
-| Reason   | Description/Examples |
-| -------- | ------- |
-| Beef  | Conflict between the creator and another influencer.   |
-| Scamming | Scams involving fans losing money and/or receiving low-quality products.    |
-| Animal abuse   | Physical harm, improper care.   |
-| Child abuse | Abuse including emotional and psychological harm.    |
-| Lying/misinformation   | General lying, plagiarism.  |
-| Exploitative content | Faking a death, recording the deceased, claiming to be part of a marginalized community for fame. |
-| Assault/abuse    | Towards a spouse or romantic partner, including physical and sexual abuse.  |
-| Racism | Blackface, racial slurs.   |
-| Infidelity   | Towards a spouse or romantic partner.  |
-| Grooming | Includes in-person and online.  |
-| Harassment   | Doxxing, encouraging fans to target individuals.  |
-| Insensitive content | Complaints that viewers considered entitled, mockery, or ignorant.      |
+<div class="art-table">
+<table>
+<thead>
+  <tr>
+    <th>Reason</th>
+    <th>Description/ Examples</th>
+  </tr>
+</thead>
+  <tr>
+    <td>Beef</td>
+    <td>Conflict between the creator and another influencer.</td>
+  </tr>
+  <tr>
+    <td>Scamming</th>
+    <td>Scams involving fans losing money and/or receiving low-quality products.</th>
+  </tr>
+  <tr>
+    <td>Animal abuse </td>
+    <td>Physical harm, improper care.</td>
+  </tr>
+  <tr>
+    <td>Child abuse </td>
+    <td>Abuse including emotional and psychological harm.</td>
+  </tr>
+  <tr>
+    <td>Lying/ Misinformation </td>
+    <td>General lying, plagiarism.</td>
+  </tr>
+  <tr>
+    <td>Exploitative content </td>
+    <td>Faking a death, recording the deceased, claiming to be part of a marginalized community for fame.</td>
+  </tr>
+  <tr>
+    <td>Assault/abuse </td>
+    <td>Towards a spouse or romantic partner, including physical and sexual abuse.</td>
+  </tr>
+  <tr>
+    <td>Racism </td>
+    <td>Blackface, racial slurs.</td>
+  </tr>
+  <tr>
+    <td>Infidelity </td>
+    <td>Towards a spouse or romantic partner.</td>
+  </tr>
+  <tr>
+    <td>Grooming</td>
+    <td>Includes in-person and online.</td>
+  </tr>
+  <tr>
+    <td>Harassment</td>
+    <td>Doxxing, encouraging fans to target individuals.</td>
+  </tr>
+  <tr>
+    <td>Insensitive content</td>
+    <td>Complaints that viewers considered entitled, mockery, or ignorant.</td>
+  </tr>
+</table>
+</div>
+
 
 These were determined throughout our data collection process, adding more categories as needed.
 
@@ -296,14 +438,14 @@ These were determined throughout our data collection process, adding more catego
 Current subscribers: All current subscriber counts were taken directly from Social Blade. Within a YouTuber’s page on Social Blade, those visiting the page can access a section labelled “Live Subscriber Count.” This provided a real-time subscriber count for any YouTube channel, which is updated every second. Even for channels that were terminated, the live subscriber count would show the subscriber count that they had before termination.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img6.png">
+<img src="{static}/images/issue2-images/2-7-img6.webp">
 <figcaption>Image 6. A screenshot of YouTuber PewDiePie’s live subscriber count page.</figcaption>
 </figure>
 
 Subscriber Count Over Time: The subscriber count of the YouTuber’s main channel was recorded at different intervals, ranging from one day before the apology was uploaded, to six months later. This was obtained from Wayback captures of Social Blade and of the YouTuber’s channel page.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-img7.png">
+<img src="{static}/images/issue2-images/2-7-img7.webp">
 <figcaption>Image 7. Screenshot of the subscriber portion of our spreadsheet.</figcaption>
 </figure>
 
@@ -313,12 +455,12 @@ Subscriber Count Over Time: The subscriber count of the YouTuber’s main channe
 The daily subscriber count and total subscriber count were plotted with the Python library matplotlib.pyplot (see Figures 1 and 2). Due to YouTube’s changes, these graphs only show the statistics of apologies posted prior to September 2019, which include 36 of the total 80 apologies. Labels were added to highlight the apologies with the most drastic increase and decrease in subscriber counts.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig1.png">
+<img src="{static}/images/issue2-images/2-7-fig1.webp">
 <figcaption>Figure 1. The Impact of an Apology on Daily Subscriber Changes (36 YouTubers)</figcaption>
 </figure>
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig2.png">
+<img src="{static}/images/issue2-images/2-7-fig2.webp">
 <figcaption>Figure 2. The Impact of an Apology on Total Subscriber Counts (36 YouTubers)</figcaption>
 </figure>
 
@@ -328,7 +470,7 @@ Although the data in Figure 1 were generally in the same range, Figure 2, which 
 To have a clearer visual of the other 34 apologies, which were compressed in Figure 2 due to the vertical scale’s consideration for the graph’s outliers, the outliers were excluded in Figure 3. In comparison to Figure 2, the edited graph was able to visualize data that had been obscured due to the previous vertical scale.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig3.png">
+<img src="{static}/images/issue2-images/2-7-fig3.webp">
 <figcaption>Figure 3. The Impact of an Apology on Total Subscriber Counts (34 YouTubers)</figcaption>
 </figure>
 
@@ -336,12 +478,12 @@ To have a clearer visual of the other 34 apologies, which were compressed in Fig
 While the differences between Figures 2 and 3 led us to believe that percent change would be a greater indicator of the apology’s reception, it was hindered by the size of the channel. In the case of smaller YouTube channels, percentage change had the positive effect of showing the impact a small number could have on the channel’s overall percentage change. For example, in Figure 4, Brad Sousa lost 3,403 subscribers on the day of his apology, which was nearly a 3% decrease in total subscribers and the worst percent change among lifestyle YouTubers. This change was not properly highlighted in the graph representing daily subscriber change (see Figure 5) as the amount he lost was tiny in comparison to fellow lifestyle YouTuber KSI who lost the most subscribers (33,000) among his peers. However, where percent change spotlights Sousa, it undermines the number of subscribers KSI lost, as 33,000 subscribers represented less than 0.16% of his twenty million subscribers at the time. 
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig4.png">
+<img src="{static}/images/issue2-images/2-7-fig4.webp">
 <figcaption>Figure 4. The Impact of an Apology from Lifestyle YouTubers on Daily Subscriber Changes</figcaption>
 </figure>
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig5.png">
+<img src="{static}/images/issue2-images/2-7-fig5.webp">
 <figcaption>Figure 5. The Impact of an Apology from Lifestyle YouTubers on Total Subscriber Counts</figcaption>
 </figure>
 
@@ -349,7 +491,7 @@ While the differences between Figures 2 and 3 led us to believe that percent cha
 Although graphs using percent change and daily subscriber counts presented limitations in cohesive data visualization, plotting data of different apologies along a longer timeframe yielded interesting results. From the sample of percent change of 34 channels in Figure 3, many YouTubers sharply lost subscribers in the days following their apology. However, on average, channels had monthly growth in subscribers despite their controversies. For apologies posted after September 2019, subscriber counts at set intervals were gathered, including subscriber count a day before the apology and six months afterwards. All apologies with a subscriber count for those two dates were plotted in Figure 6, which includes apologies posted before and after 2019. 
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig6.png">
+<img src="{static}/images/issue2-images/2-7-fig6.webp">
 <figcaption>Figure 6. Apology Reception and Subscriber Difference after 6 Months (43 Apologies)</figcaption>
 </figure>
 
@@ -362,7 +504,7 @@ Regardless of the year, there is a strong correlation between the percentage of 
 On average, the majority of apologies that were well-liked by viewers were still publicly available on YouTube (see Figure 7). Of the 46 apologies that exceeded 50% in video likes, 78% or 36 apologies were still publicly available in their original form. When considering unlisted videos, which are available on a YouTuber’s channel but only accessible through the original video link, the percentage of public apologies increases to 85%. For apologies with more dislikes than likes, only 33% (8 apologies) were publicly available or 38% when including unlisted videos.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig7.png">
+<img src="{static}/images/issue2-images/2-7-fig7.webp">
 <figcaption>Figure 7. The Impact of Duration on Apology Reception by Video Status (70 Apologies)</figcaption>
 </figure>
 
@@ -374,7 +516,7 @@ The length of an apology was also found to be indicative of its overall receptio
 The types of YouTube channels behind the apologies we analyzed predominantly represented gaming, lifestyle, commentary, beauty, and family channels (see Figure 8). Different genres of YouTube channels attract specialized audiences so we anticipated trends would appear amongst specific audiences and apology reasons. 
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig8.png">
+<img src="{static}/images/issue2-images/2-7-fig8.webp">
 <figcaption>Figure 8. Apology by YouTuber Channel Type</figcaption>
 </figure>
 
@@ -382,19 +524,19 @@ The types of YouTube channels behind the apologies we analyzed predominantly rep
 There were several trends in reasons for apologies for each channel type (see Figure 9). Apologies for animal abuse and child abuse were exclusively made by lifestyle and family channels, respectively. Lifestyle YouTubers apologized for nearly every reason available and made up most of the apologies for exploitative, infidelity, and insensitive content. Gaming channels were disproportionately represented in apologies for grooming and scamming, whereas commentary channels had a large presence in apologies for misinformation and racism.
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig9.png">
+<img src="{static}/images/issue2-images/2-7-fig9.webp">
 <figcaption>Figure 9. Apology Reasons by YouTube Channel Type</figcaption>
 </figure>
 
 Although we expected strong correlations between channel type, apology reason, and apology reception, the results were inconclusive. Several patterns emerged but they were not absolute, such as a favourable apology reception by commentary channels and for apologies addressing misinformation (see Figures 10 and 11). While some apologies by YouTubers for infidelity and exploitative content were able to regain the favour of their audiences, those were often ill-received. Apologies for animal abuse were divisive as they had the most polarizing video likes percentage for an apology reason: Brooke Houts received the second lowest likes percentage (3.73%) for her apology while Jenna Marbles received the highest percentage of likes in the dataset (98.92%).
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig10.png">
+<img src="{static}/images/issue2-images/2-7-fig10.webp">
 <figcaption>Figure 10. The Impact of Duration on Apology Reception by Channel Type (70 Apologies)</figcaption>
 </figure>
 
 <figure class="art-image">
-<img src="{static}/images/issue2-images/2-7-fig11.png">
+<img src="{static}/images/issue2-images/2-7-fig11.webp">
 <figcaption>Figure 11. The Impact of Duration on Apology Reception by Apology Reason (70 Apologies)</figcaption>
 </figure>
 
@@ -407,8 +549,8 @@ Using NLTK’s dictionary of stopwords, we cleaned up a corpus containing the te
 
 After running it 50 times for 10 topics with 10 words each, we ended up with the following words:
 
-
-<table style="max-width: 500px; width: 100%; table-layout: fixed; padding: 1em;">
+<div class="art-table">
+<table style="width: 600px;">
 <thead>
   <tr>
     <th>Topic 1</th>
@@ -442,6 +584,7 @@ After running it 50 times for 10 topics with 10 words each, we ended up with the
     <td>people, got, actually, person, stuff, done, yeah, someone, need, making</td>
   </tr>
 </table>
+</div>
 
 
 From these topics, very few contained apologetic words such as “sorry” or “wrong”. However, from certain groupings of words we can gain a bit of an idea of the subject of the video—for example, in topic 6, there is some indication of regret with the word “better” appearing alongside words such as “say” or “think”. The words “twitter” and “conversation” could mean that the influencer is responding to backlash on X (formally known as Twitter).

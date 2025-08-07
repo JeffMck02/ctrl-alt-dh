@@ -10,6 +10,6 @@ Bio: Jessica Cela is a Landscape Architecture student in her final year at the U
 In 'From Wires to Wireless,' this artwork encapsulates the evolution of music technology across generations. Centred around a Walkman from the 2000s, surrounded by modern devices like iPhones and iPads, the piece visually narrates the shift from wired to wireless technology. It highlights the swift progression from physical media to the seamless convenience of digital access, symbolising not just a transformation in how music is enjoyed but also in the broader evolution of technological integration in daily life. Through contrasting imagery, it invites reflection on the enduring love for music amidst the ever-evolving landscape of innovation and connectivity.
 
 <figure class="art-image">
-<img src="{static}/images/issue1-images/1-4.png">
+<img src="{static}/images/issue1-images/1-4.webp">
 <figcaption>From Wires to Wireless</figcaption>
 </figure>

@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    overflow-wrap: break-word; /* stops long words e.g. URLS from getting cut off */
 }
 
 /* Headings */
@@ -431,7 +432,7 @@ img.left, figure.left, div.figure.align-left {
 }
 
 /*
-	Article Images and Figures
+	Article Images, Figures, and Tables
 *****************/
 
 .art-image img, #featured .news-image {
@@ -445,6 +446,34 @@ img.left, figure.left, div.figure.align-left {
     font-style: italic;
 }
 
+.art-table {
+    max-width: 70%;
+    overflow: auto;
+    margin: auto;
+}
+
+.art-pdf embed {
+    width: 80%;
+    height: 800px;
+    padding: 10%;
+}
+
+.art-table table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 0em;
+    font-size: 0.75em;
+    border-collapse: collapse;
+}
+
+.art-table table th, td {
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 896px) {
+    .art-table {max-width: 90%;}
+    .art-pdf embed {width: 90%; height: 500px; padding: 5%;}
+}
 
 /*
 	Featured
@@ -464,6 +493,7 @@ img.left, figure.left, div.figure.align-left {
     #featured  {
         max-width: 100%;
         margin: 0em 0em;
+        padding: 1em 1em;
     }
 }
 
@@ -495,7 +525,10 @@ img.left, figure.left, div.figure.align-left {
     #content {
         margin: 0em;
         max-width: 100%;
-        padding: 1em 1em;
+        padding: 0em;
+    }
+    p, h1, h2, h3, h4, h5 {
+        padding: 0em 1em;
     }
 }
 
@@ -649,7 +682,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #posts-list {list-style: none; margin: 0;}
 #posts-list .hentry {padding-left: 10px; position: relative;}
 @media screen and (max-width: 896px) {
-    #posts-list .hentry  {padding: 0em;}}
+    #posts-list .hentry  {padding: 1em;}}
 
 #posts-list h1 {
     font-size: 1.5em;
