@@ -16,4 +16,4 @@ This video is a look into the different tasks that are required to put together 
 
 If you are a student looking to submit a video for CTRL+ALT+DH you need to ensure that you have an abstract, context for your video, and a transcript (either through CapCut or YouTube). You also need to ensure that anyone involved in the creation of the video is mentioned in your submission. Additionally, if you need to cite your work you will need to include a work cited in Chicago style.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/exK3Ozvlg8I?si=AyaZWhtUCiI4c6XW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><iframe class="youtube-frame" src="https://www.youtube.com/embed/exK3Ozvlg8I?si=AyaZWhtUCiI4c6XW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>

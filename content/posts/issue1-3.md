@@ -10,7 +10,9 @@ This twine game is a simplified example of what your submission may look like. H
 
 It is important to remember that following the submission of your Twine as an .html file, we require an abstract and author biography to be written and submitted as well. Ensure that your submission follows the criteria for the theme of the issue, and don’t forget to cite your work.
 
-
+<p>
+<iframe class="square-frame" title="CTRL+ALT+DH Twine Story" src="https://japassare.github.io/" allowfullscreen></iframe>
+</p>
 
 ## Works Cited
 

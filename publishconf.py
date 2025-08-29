@@ -17,7 +17,7 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 DELETE_OUTPUT_DIRECTORY = True
 
 PATH = "content"
-THEME = "custom-theme"  # or whatever you're using
+THEME = "custom-theme"
 
 
 # Following items are often useful when publishing

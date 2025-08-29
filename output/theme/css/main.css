@@ -8,13 +8,6 @@
 	Original author: Enrique Ramírez <http://enrique-ramirez.com/>
 */
 
-/* Imports 
-@import url("reset.css");
-@import url("pygment.css");
-@import url("typogrify.css");
-@import url("fonts.css");
-*/
-
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -432,8 +425,29 @@ img.left, figure.left, div.figure.align-left {
 }
 
 /*
-	Article Images, Figures, and Tables
+	Article Images, Figures, Tables, iFrames
 *****************/
+
+.square-frame {
+    width: 50%;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+.responsive-frame {
+    width: 50%;
+}
+
+.youtube-frame {
+    aspect-ratio: 16 / 9;
+    width: 75%;
+}
+
+@media screen and (max-width: 896px) {
+    .square-frame, .responsive-frame, .youtube-frame {width: 100%;}
+}
 
 .art-image img, #featured .news-image {
     max-width: 600px;
