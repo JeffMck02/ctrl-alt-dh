@@ -420,9 +420,19 @@ img.left, figure.left, div.figure.align-left {
     height: auto;
 }
 
+.poster-cover figure img, .poster-cover figcaption {
+    width:100%;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 896px) {
     .index-cover figure img {max-width: 100%;}
+    .poster-cover figure img, .poster-cover figcaption {max-width: 100%;}
 }
+
 
 /*
 	Article Images, Figures, Tables, iFrames
@@ -449,7 +459,7 @@ img.left, figure.left, div.figure.align-left {
     .square-frame, .responsive-frame, .youtube-frame {width: 100%;}
 }
 
-.art-image img, #featured .news-image {
+.art-image img, #featured .news-image img {
     max-width: 600px;
     width: 100%;
     height: auto;

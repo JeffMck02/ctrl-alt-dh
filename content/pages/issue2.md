@@ -5,7 +5,7 @@ Summary: Issue 02 Index
 Category: issues
 Slug: issue-2
 
-## Dec. 2025
+## Dec. 2024
 
 <div class="index-cover">
 <figure>

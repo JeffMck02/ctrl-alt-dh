@@ -68,7 +68,7 @@ MENUITEMS = [
     ]),
     ('Submissions', [
         ('Guidelines', '/guidelines.html'),
-        ('CFP', '/cfp-2024.html')
+        ('CFP', '/cfp-2025.html')
     ]),
     ('Browse', '/tags.html'),
     ('News', '/category/news.html'),
